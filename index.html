@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre elementary OS: una distribución GNU/Linux elegante, minimalista y basada en Ubuntu. Conoce su historia, características, aplicaciones y por qué es ideal para nuevos usuarios de Linux.">
+    <meta name="keywords" content="elementary OS, Linux, distribución Linux, Ubuntu, Pantheon, escritorio Linux, código abierto">
+    <meta name="author" content="Proyecto Educativo">
+    <meta property="og:title" content="elementary OS - Guía Completa">
+    <meta property="og:description" content="Todo lo que necesitas saber sobre elementary OS: historia, características, aplicaciones y comparativas.">
+    <meta property="og:type" content="website">
+    <title>elementary OS — Guía Completa sobre la Distribución Linux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de progreso de scroll -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <svg width="28" height="28" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0zm0 42.7c18.4 0 35.5 5.7 49.7 15.4L128 107.8 78.3 58.1A84.9 84.9 0 01128 42.7zM42.7 128c0-17.4 4.8-33.7 13.1-47.7l49.7 49.7-49.7 49.7A85.1 85.1 0 0142.7 128zm85.3 85.3c-18.4 0-35.5-5.7-49.7-15.4l49.7-49.7 49.7 49.7A84.9 84.9 0 01128 213.3zm13.1-63.1L128 128l13.1 13.1L190.8 175.6a85.1 85.1 0 000-55.2l-49.7-17.4z" fill="currentColor"/>
+                </svg>
+                <span>elementary OS</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">Qué es</a></li>
+                <li><a href="#history" class="nav-link">Historia</a></li>
+                <li><a href="#base" class="nav-link">Base</a></li>
+                <li><a href="#features" class="nav-link">Características</a></li>
+                <li><a href="#gallery" class="nav-link">Galería</a></li>
+                <li><a href="#apps" class="nav-link">Aplicaciones</a></li>
+                <li><a href="#team" class="nav-link">Equipo</a></li>
+                <li><a href="#interface" class="nav-link">Interfaz</a></li>
+                <li><a href="#use-cases" class="nav-link">Usos</a></li>
+                <li><a href="#recommended" class="nav-link">Recomendado</a></li>
+                <li><a href="#pros-cons" class="nav-link">Ventajas</a></li>
+                <li><a href="#comparison" class="nav-link">Comparación</a></li>
+                <li><a href="#quick-facts" class="nav-link">Datos</a></li>
+                <li><a href="#sources" class="nav-link">Fuentes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">elementary OS</h1>
+                <p class="hero-subtitle">Thoughtful, capable, and ethical computing</p>
+                <p class="hero-desc">Una distribución GNU/Linux elegante, rápida y respetuosa con la privacidad, basada en Ubuntu. Diseñada para ofrecer una experiencia de escritorio pulida e intuitiva.</p>
+                <a href="#about" class="btn btn-primary">Conocer más</a>
+            </div>
+            <div class="hero-screenshot">
+                <img src="assets/images/desktop.jpg" alt="Escritorio de elementary OS mostrando el entorno Pantheon con el dock, el panel superior y el fondo de pantalla predeterminado" loading="eager">
+            </div>
+        </section>
+
+        <!-- 1. ¿Qué es elementary OS? -->
+        <section class="section" id="about">
+            <div class="container fade-in">
+                <h2 class="section-title">¿Qué es elementary OS?</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p><strong>elementary OS</strong> es una distribución del sistema operativo GNU/Linux diseñada con un enfoque en la <em>usabilidad</em>, el <em>diseño</em> y la <em>ética del software</em>. Su lema, <em>"Thoughtful, capable, and ethical computing"</em> (informática reflexiva, capaz y ética), resume su filosofía: ofrecer un sistema operativo que sea a la vez potente, accesible y respetuoso con la privacidad del usuario.</p>
+                        <p>Como distribución GNU/Linux, elementary OS se construye sobre el <strong>núcleo Linux</strong> y las herramientas del proyecto GNU, lo que significa que es software libre y de código abierto. Cualquier persona puede descargarlo, usarlo, modificarlo y redistribuirlo sin costo alguno.</p>
+                        <p>Lo que diferencia a elementary OS de muchas otras distribuciones Linux es su <strong>énfasis en la experiencia del usuario</strong>. Mientras que otras distribuciones priorizan la personalización o la potencia técnica, elementary OS busca ofrecer una interfaz <strong>limpia, coherente y fácil de usar</strong>, pensada para que el usuario pueda enfocarse en lo que necesita hacer sin distracciones.</p>
+                        <p>El sistema incluye su propio entorno de escritorio llamado <strong>Pantheon</strong>, una colección de aplicaciones propias diseñadas para integrarse de forma nativa, y <strong>AppCenter</strong>, una tienda de aplicaciones con un modelo de pago lo que quieras (pay-what-you-want).</p>
+                    </div>
+                    <div class="about-sidebar">
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            </div>
+                            <h3>Tipo</h3>
+                            <p>Distribución GNU/Linux de código abierto</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                            <h3>Entorno de escritorio</h3>
+                            <p>Pantheon (propio y exclusivo)</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <h3>Licencia</h3>
+                            <p>GPLv3 (GNU General Public License)</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </div>
+                            <h3>Público objetivo</h3>
+                            <p>Usuarios que buscan facilidad de uso, diseño y privacidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Historia y año de lanzamiento -->
+        <section class="section section-dark" id="history">
+            <div class="container fade-in">
+                <h2 class="section-title">Historia de elementary OS</h2>
+                <p class="section-subtitle">Un recorrido por la evolución de una de las distribuciones Linux más elegantes</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2008</span>
+                            <h3>Los orígenes</h3>
+                            <p>El proyecto elementary comienza como un conjunto de temas y elementos de diseño para Ubuntu. Los desarrolladores crean iconos y temas que buscan mejorar la estética de Linux.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">31 mar 2011</span>
+                            <h3>0.1 "Jupiter" — El primer lanzamiento</h3>
+                            <p>El 31 de marzo de 2011 se publica la primera versión estable, basada en Ubuntu 10.10. Es la primera vez que elementary OS se presenta como una distribución independiente.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">10 ago 2013</span>
+                            <h3>0.2 "Luna" — Maduración</h3>
+                            <p>El 10 de agosto de 2013 se lanza Luna, basada en Ubuntu 12.04 LTS. Esta versión trae un rediseño completo del sitio web, un instalador propio y una identidad visual más definida.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">11 abr 2015</span>
+                            <h3>0.3 "Freya" — Crecimiento</h3>
+                            <p>El 11 de abril de 2015, Freya se lanza basada en Ubuntu 14.04 LTS. Recibe más de 1.2 millones de descargas y populariza el modelo de pago lo que quieras (pay-what-you-want).</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">9 sep 2016</span>
+                            <h3>0.4 "Loki" — AppCenter</h3>
+                            <p>El 9 de septiembre de 2016, Loki introduce AppCenter, la tienda de aplicaciones propia. Es considerado uno de los escritorios Linux más elegantes del momento.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">16 oct 2018</span>
+                            <h3>5.0 "Juno" — Un nuevo numerado</h3>
+                            <p>El 16 de octubre de 2018, elementary OS cambia a un esquema de numeración mayor. Juno incluye Night Light, ventanas ajustables y mejoras en AppCenter.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">3 dic 2019</span>
+                            <h3>5.1 "Hera" — Refinamiento</h3>
+                            <p>El 3 de diciembre de 2019, Hera llega con soporte para Flatpak, mejor rendimiento y una interfaz más pulida.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">10 ago 2021</span>
+                            <h3>6.0 "Odin" — Modernización</h3>
+                            <p>El 10 de agosto de 2021, Odin introduce tema oscuro, colores de acento personalizables, gestos multitáctiles, nuevo instalador y Centro de Notificaciones.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">31 ene 2023</span>
+                            <h3>7.0 "Horus" — Actualización mayor</h3>
+                            <p>El 31 de enero de 2023, Horus se lanza basada en Ubuntu 22.04 LTS. Enfocado en AppCenter, nuevas funciones y una plataforma de desarrollo mejorada.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024–2026</span>
+                            <h3>8.0 / 8.1 "Circe" — La versión actual</h3>
+                            <p>El 26 de noviembre de 2024 se lanza 8.0, basada en Ubuntu 24.04 LTS, con integración de Flathub y mejoras en multitarea. En diciembre de 2025, la versión 8.1 introduce Wayland como sesión predeterminada (Secure Session), soporte ARM64 y escalado fraccionario. La última actualización, <strong>8.1.1</strong>, se publicó el 26 de febrero de 2026.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ¿En qué distribución está basado? -->
+        <section class="section" id="base">
+            <div class="container fade-in">
+                <h2 class="section-title">¿En qué distribución está basado?</h2>
+                <p class="section-subtitle">elementary OS se construye sobre Ubuntu LTS, una de las distribuciones más populares del mundo</p>
+                <div class="base-diagram">
+                    <div class="base-level">
+                        <div class="base-box base-linux">
+                            <h4>GNU/Linux</h4>
+                            <p>Núcleo del sistema operativo</p>
+                        </div>
+                        <div class="base-arrow" aria-hidden="true">
+                            <svg width="24" height="40" viewBox="0 0 24 40"><path d="M12 0v32M4 24l8 8 8-8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="base-level">
+                        <div class="base-box base-ubuntu">
+                            <h4>Ubuntu LTS</h4>
+                            <p>Distribución base con soporte a largo plazo</p>
+                        </div>
+                        <div class="base-arrow" aria-hidden="true">
+                            <svg width="24" height="40" viewBox="0 0 24 40"><path d="M12 0v32M4 24l8 8 8-8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <div class="base-level">
+                        <div class="base-box base-elem">
+                            <h4>elementary OS</h4>
+                            <p>Entorno gráfico, apps y filosofía propia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="base-details">
+                    <div class="base-detail-card">
+                        <h3>¿Qué significa estar basado en Ubuntu?</h3>
+                        <p>Estar basado en Ubuntu implica que elementary OS hereda su infraestructura: el gestor de paquetes (APT y dpkg), la compatibilidad con los repositorios de Ubuntu, el kernel de Linux y las actualizaciones de seguridad de Canonical. En la práctica, la mayoría del software diseñado para Ubuntu funciona en elementary OS.</p>
+                    </div>
+                    <div class="base-detail-card">
+                        <h3>Ventajas de la base Ubuntu LTS</h3>
+                        <ul>
+                            <li><strong>Estabilidad:</strong> Las versiones LTS reciben actualizaciones de seguridad y correcciones durante años.</li>
+                            <li><strong>Compatibilidad de hardware:</strong> Los controladores que funcionan en Ubuntu funcionan en elementary OS.</li>
+                            <li><strong>Software disponible:</strong> Repositorios de Ubuntu, Flatpak y Flathub disponibles de forma nativa.</li>
+                            <li><strong>Comunidad:</strong> Las soluciones y tutoriales de Ubuntu suelen aplicar también aquí.</li>
+                        </ul>
+                    </div>
+                    <div class="base-detail-card">
+                        <h3>¿Qué hereda y qué es propio?</h3>
+                        <p><strong>Hereda de Ubuntu:</strong> Kernel de Linux, sistema APT, repositorios, actualizaciones de seguridad y compatibilidad de hardware.</p>
+                        <p><strong>Es propio de elementary:</strong> Entorno Pantheon, gestor de ventanas Gala, apps del sistema (Files, Code, Terminal, Mail...), AppCenter y la filosofía de diseño.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Características que lo hacen diferente -->
+        <section class="section section-alt" id="features">
+            <div class="container fade-in">
+                <h2 class="section-title">Características que lo hacen diferente</h2>
+                <p class="section-subtitle">Lo que distingue a elementary OS de otras distribuciones Linux</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                        </div>
+                        <h3>Diseño minimalista</h3>
+                        <p>Una estética limpia y cuidada donde cada elemento visual tiene un propósito. Sin sobrecarga ni elementos innecesarios.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Pantheon Desktop</h3>
+                        <p>Un entorno de escritorio propio, construido sobre GTK, con su gestor de ventanas Gala y totalmente integrado con las aplicaciones del sistema.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                        </div>
+                        <h3>AppCenter</h3>
+                        <p>Tienda de aplicaciones propia con un modelo de pago lo que quieras, donde cada aplicación está revisada y curada por el equipo de elementary.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Integración entre aplicaciones</h3>
+                        <p>Las aplicaciones de elementary están diseñadas para funcionar juntas de forma coherente, compartiendo elementos de diseño, atajos y comportamiento.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Privacidad</h3>
+                        <p>No recopila datos personales ni hace tratos publicitarios. Se muestran indicadores cuando una app usa el micrófono y los permisos son revisados antes de publicarse.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        </div>
+                        <h3>Facilidad para nuevos usuarios</h3>
+                        <p>Curva de aprendizaje suave. Ideal para personas que vienen de Windows o macOS y quieren probar Linux sin complicaciones.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                        </div>
+                        <h3>Consistencia visual</h3>
+                        <p>Human Interface Guidelines propias que garantizan que todas las aplicaciones se vean y funcionen de manera similar y coherente.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                        </div>
+                        <h3>Gestos y atajos</h3>
+                        <p>Sistema de gestos multitáctiles y atajos de teclado que facilitan la navegación, el cambio de apps y la productividad.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/><circle cx="12" cy="12" r="4"/></svg>
+                        </div>
+                        <h3>Actualizaciones y seguridad</h3>
+                        <p>Al estar basado en Ubuntu LTS, hereda actualizaciones de seguridad frecuentes e incluye una app de actualización de firmware.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <h3>Código abierto</h3>
+                        <p>Código fuente completamente abierto y auditable en GitHub. Cualquiera puede contribuir, aprender y redistribuir el sistema.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Galería de imágenes -->
+        <section class="section" id="gallery">
+            <div class="container fade-in">
+                <h2 class="section-title">Galería de imágenes</h2>
+                <p class="section-subtitle">Imágenes representativas de elementary OS y su entorno Pantheon</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-caption="Escritorio de elementary OS 8 — Panel superior, dock y fondo de pantalla">
+                        <img src="assets/images/desktop.jpg" alt="Escritorio de elementary OS con el panel superior, dock de aplicaciones y fondo de pantalla" loading="lazy">
+                        <div class="gallery-overlay"><span>Escritorio principal</span></div>
+                    </div>
+                    <div class="gallery-item" data-caption="AppCenter — Tienda de aplicaciones de elementary OS con el modelo de pago lo que quieras">
+                        <img src="assets/images/appcenter.png" alt="AppCenter de elementary OS mostrando la tienda de aplicaciones" loading="lazy">
+                        <div class="gallery-overlay"><span>AppCenter</span></div>
+                    </div>
+                    <div class="gallery-item" data-caption="Files — Gestor de archivos con vista de columnas y pestañas">
+                        <img src="assets/images/files.png" alt="Files, el gestor de archivos de elementary OS" loading="lazy">
+                        <div class="gallery-overlay"><span>Files</span></div>
+                    </div>
+                    <div class="gallery-item" data-caption="Code — Editor de código con resaltado de sintaxis e integración Git">
+                        <img src="assets/images/code.png" alt="Code, el editor de código de elementary OS" loading="lazy">
+                        <div class="gallery-overlay"><span>Code</span></div>
+                    </div>
+                    <div class="gallery-item" data-caption="Terminal — Emulador de terminal con esquemas de colores y pestañas">
+                        <img src="assets/images/terminal.png" alt="Terminal de elementary OS con esquema de colores" loading="lazy">
+                        <div class="gallery-overlay"><span>Terminal</span></div>
+                    </div>
+                    <div class="gallery-item" data-caption="Music — Reproductor de música con vista de biblioteca">
+                        <img src="assets/images/music.png" alt="Music, el reproductor de música de elementary OS" loading="lazy">
+                        <div class="gallery-overlay"><span>Music</span></div>
+                    </div>
+                    <div class="gallery-item" data-caption="Mail — Cliente de correo con vista de conversaciones">
+                        <img src="assets/images/mail.png" alt="Mail, el cliente de correo de elementary OS" loading="lazy">
+                        <div class="gallery-overlay"><span>Mail</span></div>
+                    </div>
+                    <div class="gallery-item" data-caption="Web — Navegador basado en WebKit con protección de privacidad">
+                        <img src="assets/images/web.png" alt="Web, el navegador de elementary OS" loading="lazy">
+                        <div class="gallery-overlay"><span>Web</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen ampliada">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">&times;</button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+
+        <!-- 6. Aplicaciones incluidas -->
+        <section class="section section-dark" id="apps">
+            <div class="container fade-in">
+                <h2 class="section-title">Aplicaciones incluidas</h2>
+                <p class="section-subtitle">Un conjunto cuidadosamente seleccionado de aplicaciones para las tareas cotidianas</p>
+                <div class="apps-grid">
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/web.svg" alt="Icono de Web" loading="lazy">
+                        </div>
+                        <h3>Web</h3>
+                        <p>Navegador basado en WebKit. Rápido, ligero y respeta tu privacidad. Soporta web apps y es eficiente con la batería.</p>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/mail.svg" alt="Icono de Mail" loading="lazy">
+                        </div>
+                        <h3>Mail</h3>
+                        <p>Cliente de correo con múltiples cuentas, búsqueda rápida, notificaciones y una vista basada en conversaciones.</p>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/files.svg" alt="Icono de Files" loading="lazy">
+                        </div>
+                        <h3>Files</h3>
+                        <p>Gestor de archivos con vista de columnas, pestañas con historial, barra de rutas inteligente y búsqueda integrada.</p>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/terminal.svg" alt="Icono de Terminal" loading="lazy">
+                        </div>
+                        <h3>Terminal</h3>
+                        <p>Emulador de terminal con esquemas de colores, pestañas, notificaciones de tareas y protección contra pegado accidental.</p>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/code.svg" alt="Icono de Code" loading="lazy">
+                        </div>
+                        <h3>Code</h3>
+                        <p>Editor de código con autoguardado, carpetas de proyecto, integración Git, resaltado de sintaxis y extensiones.</p>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/music.svg" alt="Icono de Music" loading="lazy">
+                        </div>
+                        <h3>Music</h3>
+                        <p>Reproductor de música con biblioteca organizada por álbum, búsqueda rápida y listas de reproducción.</p>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/photos.svg" alt="Icono de Photos" loading="lazy">
+                        </div>
+                        <h3>Photos</h3>
+                        <p>Gestor y editor de fotos con importación, organización, edición básica, presentaciones y compartición.</p>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/videos.svg" alt="Icono de Videos" loading="lazy">
+                        </div>
+                        <h3>Videos</h3>
+                        <p>Reproductor con biblioteca, vista previa en la barra de búsqueda, subtítulos y reanudación de la reproducción.</p>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/calendar.svg" alt="Icono de Calendar" loading="lazy">
+                        </div>
+                        <h3>Calendar</h3>
+                        <p>Calendario de escritorio con creación de eventos, lenguaje natural y sincronización con cuentas en línea.</p>
+                    </div>
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <img src="assets/icons/camera.svg" alt="Icono de Camera" loading="lazy">
+                        </div>
+                        <h3>Camera</h3>
+                        <p>Aplicación para capturar fotos y video desde la webcam integrada o desde una cámara USB.</p>
+                    </div>
+                </div>
+                <div class="apps-note">
+                    <p><strong>Nota:</strong> Las aplicaciones anteriores vienen preinstaladas con elementary OS. A través de <strong>AppCenter</strong> se pueden instalar muchas más aplicaciones —gratuitas o de pago lo que quieras— revisadas y curadas por el equipo de elementary, así como software Flatpak desde Flathub.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. ¿Quién desarrolla elementary OS? -->
+        <section class="section" id="team">
+            <div class="container fade-in">
+                <h2 class="section-title">¿Quién desarrolla elementary OS?</h2>
+                <div class="team-grid">
+                    <div class="team-main">
+                        <div class="team-card">
+                            <h3>elementary, Inc.</h3>
+                            <p>elementary OS es desarrollado y mantenido por <strong>elementary, Inc.</strong>, una organización de código abierto. El proyecto comenzó como una comunidad de diseñadores y desarrolladores voluntarios y con el tiempo se ha profesionalizado, colaborando con otros proyectos del ecosistema Linux.</p>
+                        </div>
+                        <div class="team-card">
+                            <h3>Danielle Foré</h3>
+                            <p>Fundadora y directora ejecutiva del proyecto. Danielle lidera la visión del producto, el diseño y la dirección general. Ha sido la cara pública de elementary OS desde sus inicios y, tras el cambio de propiedad de 2021, es la única dueña de la empresa.</p>
+                        </div>
+                        <div class="team-card">
+                            <h3>Cassidy James Blaede</h3>
+                            <p>Cofundador y ex CTO. Cassidy fue fundamental en el diseño del entorno Pantheon y las aplicaciones del sistema. En 2021, tras desacuerdos legales, vendió sus acciones a Danielle Foré y dejó la compañía.</p>
+                        </div>
+                    </div>
+                    <div class="team-sidebar">
+                        <div class="team-card">
+                            <h3>Financiamiento</h3>
+                            <p>El proyecto se financia principalmente con el modelo de <strong>pago lo que quieras</strong> (pay-what-you-want) en su sitio web y en AppCenter, además de donaciones de la comunidad. En 2018, una donación anónima permitió contratar personal adicional a tiempo completo.</p>
+                        </div>
+                        <div class="team-card">
+                            <h3>Código abierto</h3>
+                            <p>Todo el código fuente del sistema operativo, las aplicaciones y el entorno Pantheon está disponible en <a href="https://github.com/elementary" target="_blank" rel="noopener noreferrer">GitHub</a>. La comunidad puede contribuir con código, reportar errores y proponer mejoras.</p>
+                        </div>
+                        <div class="team-card">
+                            <h3>Colaboración</h3>
+                            <p>elementary colabora activamente con el ecosistema de código abierto: co-desarrolló el instalador con System76 e integra tecnologías de los proyectos GNOME, Flatpak/Flathub y Flutter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Interfaz gráfica -->
+        <section class="section section-dark" id="interface">
+            <div class="container fade-in">
+                <h2 class="section-title">Interfaz gráfica: Pantheon</h2>
+                <p class="section-subtitle">El entorno de escritorio propio de elementary OS, diseñado para ser intuitivo y elegante</p>
+                <div class="interface-diagram">
+                    <div class="diagram-container">
+                        <div class="diagram-panel"></div>
+                        <div class="diagram-desktop">
+                            <p class="diagram-desktop-label">Escritorio</p>
+                            <p class="diagram-desktop-text">Área de trabajo limpia. Las ventanas se organizan con bordes redondeados y sombras suaves.</p>
+                        </div>
+                        <div class="diagram-dock"></div>
+                    </div>
+                </div>
+                <div class="interface-details">
+                    <div class="interface-detail">
+                        <h3>Panel superior (Wingpanel)</h3>
+                        <p>Barra fija en la parte superior. Contiene el menú de aplicaciones (Slingshot) a la izquierda, los indicadores de sistema y el centro de notificaciones a la derecha, con el reloj en el centro.</p>
+                    </div>
+                    <div class="interface-detail">
+                        <h3>Dock</h3>
+                        <p>Barra de tareas en la parte inferior, completamente reescrita en la versión 8. Muestra aplicaciones fijadas y en ejecución, se oculta con las ventanas maximizadas y permite el cambio rápido entre apps.</p>
+                    </div>
+                    <div class="interface-detail">
+                        <h3>Menú de aplicaciones (Slingshot)</h3>
+                        <p>Muestra todas las aplicaciones instaladas en una cuadrícula con búsqueda integrada, organizadas por categorías para encontrar lo que necesitas al instante.</p>
+                    </div>
+                    <div class="interface-detail">
+                        <h3>Ventanas y Gala</h3>
+                        <p>Gala, el gestor de ventanas basado en Mutter, ofrece bordes redondeados, soporte de mosaico lateral, Picture-in-Picture y una vista de multitarea.</p>
+                    </div>
+                    <div class="interface-detail">
+                        <h3>Vista de multitarea</h3>
+                        <p>Muestra todas las ventanas y espacios de trabajo abiertos. Se accede con un gesto de cuatro dedos o con la tecla Super (Windows).</p>
+                    </div>
+                    <div class="interface-detail">
+                        <h3>Configuración del sistema</h3>
+                        <p>Panel modular basado en plugins (Switchboard). Permite ajustar pantalla, red, sonido, privacidad, cuentas de usuario y actualizaciones, entre otras opciones.</p>
+                    </div>
+                    <div class="interface-detail">
+                        <h3>Notificaciones</h3>
+                        <p>Centro de notificaciones integrado con modo "No Molestar", notificaciones persistentes y acciones rápidas desde la propia notificación.</p>
+                    </div>
+                    <div class="interface-detail">
+                        <h3>Espacios de trabajo</h3>
+                        <p>Múltiples escritorios virtuales para organizar el trabajo. En la versión 8, el conmutador de espacios de trabajo se integra directamente en el Dock.</p>
+                    </div>
+                    <div class="interface-detail">
+                        <h3>Atajos de teclado</h3>
+                        <p>Super para multitarea, Super+Flechas para el mosaico de ventanas, Ctrl+Alt+T para Terminal. Todos personalizables desde Configuración.</p>
+                    </div>
+                    <div class="interface-detail">
+                        <h3>Gestos multitáctiles</h3>
+                        <p>Gestos con trackpad o pantalla táctil para cambiar de espacio de trabajo, abrir la multitarea y navegar con fluidez.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. ¿Para qué sirve? -->
+        <section class="section" id="use-cases">
+            <div class="container fade-in">
+                <h2 class="section-title">¿Para qué sirve elementary OS?</h2>
+                <p class="section-subtitle">Un sistema operativo versátil para múltiples actividades</p>
+                <div class="use-cases-grid">
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                        </div>
+                        <h3>Navegar por Internet</h3>
+                        <p>Con el navegador Web podés navegar, usar servicios web y aplicaciones en línea de forma segura y fluida.</p>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                        </div>
+                        <h3>Estudiar</h3>
+                        <p>Ideal para investigar, redactar trabajos, tomar notas y usar herramientas educativas con un sistema libre de distracciones.</p>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Programar</h3>
+                        <p>Con Code y Terminal integrados es una gran plataforma para desarrollar. Compatible con las herramientas de desarrollo de Ubuntu.</p>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+                        </div>
+                        <h3>Trabajar con oficina</h3>
+                        <p>LibreOffice está disponible vía AppCenter o Flathub para documentos, planillas y presentaciones compatibles con formatos de Office.</p>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                        </div>
+                        <h3>Consumir multimedia</h3>
+                        <p>Con Music, Videos y Photos se puede organizar y disfrutar de música, películas y fotografías con una interfaz agradable.</p>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        </div>
+                        <h3>Gestionar archivos</h3>
+                        <p>Files permite organizar documentos con una interfaz intuitiva de columnas, pestañas y búsqueda integrada.</p>
+                    </div>
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                        </div>
+                        <h3>Aprender Linux</h3>
+                        <p>Una de las mejores distribuciones para iniciarse en el mundo Linux gracias a su interfaz accesible y su enfoque en la facilidad de uso.</p>
+                    </div>
+                </div>
+                <div class="use-cases-note">
+                    <h3>¿Qué no es su punto fuerte?</h3>
+                    <p>elementary OS no está especialmente orientado al gaming avanzado, a la edición de video profesional ni al uso de software especializado de nicho con dependencias propietarias. Para esas actividades, otras distribuciones o configuraciones específicas pueden ser más adecuadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. ¿Para quién está recomendado? -->
+        <section class="section section-alt" id="recommended">
+            <div class="container fade-in">
+                <h2 class="section-title">¿Para quién está recomendado?</h2>
+                <div class="recommended-grid">
+                    <div class="recommended-col recommended-yes">
+                        <h3>Ideal para:</h3>
+                        <ul class="recommended-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Usuarios que vienen de <strong>Windows o macOS</strong> y buscan una alternativa elegante</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Personas que buscan una <strong>interfaz sencilla y limpia</strong></span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Usuarios que <strong>priorizan el diseño</strong> y la facilidad de uso</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span><strong>Estudiantes</strong> que necesitan un sistema estable y eficiente</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Personas que quieren <strong>comenzar con Linux</strong> sin una curva de aprendizaje empinada</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Usuarios que usan el ordenador para <strong>tareas cotidianas</strong>: navegar, correo, documentos</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Equipos con <strong>hardware modesto o antiguo</strong> que necesitan un sistema ligero</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recommended-col recommended-no">
+                        <h3>No tan recomendado para:</h3>
+                        <ul class="recommended-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                <span>Usuarios que necesitan una <strong>personalización extrema</strong> del escritorio</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                <span>Gamers que buscan la <strong>máxima compatibilidad</strong> con títulos AAA</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                <span>Profesionales de <strong>edición de video o foto</strong> que dependen de software específico</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                <span>Usuarios avanzados que requieren <strong>control total del sistema</strong> desde el primer día</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Ventajas y desventajas -->
+        <section class="section" id="pros-cons">
+            <div class="container fade-in">
+                <h2 class="section-title">Ventajas y desventajas</h2>
+                <p class="section-subtitle">Un balance honesto sobre qué ofrece el sistema</p>
+                <div class="pros-cons-grid">
+                    <div class="pros-col">
+                        <h3 class="pros-heading">Ventajas</h3>
+                        <ul class="pros-list">
+                            <li>Diseño pulido y coherente en todo el sistema</li>
+                            <li>Interfaz intuitiva, fácil de adoptar para nuevos usuarios</li>
+                            <li>Rendimiento ligero, funciona bien en hardware modesto</li>
+                            <li>AppCenter con modelo de pago lo que quieras y apps curadas</li>
+                            <li>Aplicaciones propias integradas nativamente</li>
+                            <li>Basado en Ubuntu LTS: estabilidad y compatibilidad de software</li>
+                            <li>Código abierto y respetuoso con la privacidad</li>
+                            <li>Actualizaciones de seguridad frecuentes</li>
+                            <li>Soporte Flatpak y Flathub integrado</li>
+                            <li>Comunidad activa y documentación disponible</li>
+                        </ul>
+                    </div>
+                    <div class="cons-col">
+                        <h3 class="cons-heading">Desventajas</h3>
+                        <ul class="cons-list">
+                            <li>Opciones de personalización del escritorio más limitadas (subjetivo)</li>
+                            <li>Algunas apps de AppCenter pueden ser menos completas que alternativas maduras</li>
+                            <li>No ideal para gaming avanzado sin configuración adicional</li>
+                            <li>El conjunto de apps preinstaladas es reducido por diseño</li>
+                            <li>Su dependencia de Ubuntu LTS retrasa el acceso a versiones nuevas de componentes</li>
+                            <li>Menor disponibilidad de temas y extensiones de terceros</li>
+                            <li>Algunas configuraciones de hardware pueden requerir ajustes manuales</li>
+                            <li>El ritmo de versiones mayores es lento para algunos usuarios (subjetivo)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Comparación con otras distribuciones -->
+        <section class="section section-dark" id="comparison">
+            <div class="container fade-in">
+                <h2 class="section-title">Comparación con otras distribuciones</h2>
+                <p class="section-subtitle">elementary OS frente a las distribuciones Linux más populares</p>
+                <div class="table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Característica</th>
+                                <th scope="col">elementary OS</th>
+                                <th scope="col">Ubuntu</th>
+                                <th scope="col">Linux Mint</th>
+                                <th scope="col">Fedora</th>
+                                <th scope="col">Zorin OS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Base</th>
+                                <td>Ubuntu LTS</td>
+                                <td>Debian</td>
+                                <td>Ubuntu LTS</td>
+                                <td>Fedora (independiente)</td>
+                                <td>Ubuntu LTS</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Entorno gráfico</th>
+                                <td>Pantheon</td>
+                                <td>GNOME</td>
+                                <td>Cinnamon, MATE, Xfce</td>
+                                <td>GNOME</td>
+                                <td>Zorin DE (GNOME modificado)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Facilidad de uso</th>
+                                <td>Muy fácil</td>
+                                <td>Fácil</td>
+                                <td>Muy fácil</td>
+                                <td>Media</td>
+                                <td>Muy fácil</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Personalización</th>
+                                <td>Limitada</td>
+                                <td>Alta</td>
+                                <td>Alta</td>
+                                <td>Alta</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Consumo de recursos</th>
+                                <td>Bajo</td>
+                                <td>Medio</td>
+                                <td>Bajo-Medio</td>
+                                <td>Medio</td>
+                                <td>Medio</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Público recomendado</th>
+                                <td>Principiantes, diseño</td>
+                                <td>Uso general</td>
+                                <td>Principiantes, migrantes de Windows</td>
+                                <td>Desarrolladores, usuarios intermedios</td>
+                                <td>Migrantes de Windows</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tienda de apps</th>
+                                <td>AppCenter (Flatpak)</td>
+                                <td>Snap Store</td>
+                                <td>Software Manager</td>
+                                <td>GNOME Software</td>
+                                <td>Software Store</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Filosofía / diseño</th>
+                                <td>Minimalista, coherente</td>
+                                <td>Completo, versátil</td>
+                                <td>Familiar, práctico</td>
+                                <td>Moderno, innovador</td>
+                                <td>Familiar, tradicional</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Curva de aprendizaje</th>
+                                <td>Muy baja</td>
+                                <td>Baja</td>
+                                <td>Muy baja</td>
+                                <td>Media</td>
+                                <td>Muy baja</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="comparison-summary">
+                    <h3>¿Cuándo elegir elementary OS?</h3>
+                    <p>Elegí elementary OS si valorás la <strong>consistencia visual</strong> y la <strong>simplicidad</strong>, y querés un sistema que "simplemente funcione" sin configuración compleja. Es ideal si venís de macOS o buscás una experiencia pulida con pocas opciones que gestionar.</p>
+                    <p>Elegí <strong>Ubuntu</strong> si querés versatilidad y un ecosistema más amplio. <strong>Linux Mint</strong> si preferís una interfaz familiar de Windows con personalización. <strong>Fedora</strong> si buscás tecnología de punta. <strong>Zorin OS</strong> si querés una migración sencilla desde Windows. Cada una tiene fortalezas según tus prioridades.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. Datos rápidos -->
+        <section class="section" id="quick-facts">
+            <div class="container fade-in">
+                <h2 class="section-title">Datos rápidos</h2>
+                <div class="quick-facts-grid">
+                    <div class="quick-fact-card">
+                        <div class="quick-fact-value">GNU/Linux</div>
+                        <div class="quick-fact-label">Tipo</div>
+                    </div>
+                    <div class="quick-fact-card">
+                        <div class="quick-fact-value">Ubuntu LTS</div>
+                        <div class="quick-fact-label">Base</div>
+                    </div>
+                    <div class="quick-fact-card">
+                        <div class="quick-fact-value">Pantheon</div>
+                        <div class="quick-fact-label">Entorno gráfico</div>
+                    </div>
+                    <div class="quick-fact-card">
+                        <div class="quick-fact-value">GPLv3</div>
+                        <div class="quick-fact-label">Licencia</div>
+                    </div>
+                    <div class="quick-fact-card">
+                        <div class="quick-fact-value">2011</div>
+                        <div class="quick-fact-label">Primer lanzamiento</div>
+                    </div>
+                    <div class="quick-fact-card">
+                        <div class="quick-fact-value">elementary, Inc.</div>
+                        <div class="quick-fact-label">Organización</div>
+                    </div>
+                    <div class="quick-fact-card">
+                        <div class="quick-fact-value">amd64 · arm64</div>
+                        <div class="quick-fact-label">Arquitecturas</div>
+                    </div>
+                    <div class="quick-fact-card">
+                        <div class="quick-fact-value">8.1.1</div>
+                        <div class="quick-fact-label">Última versión</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 14. Línea de tiempo interactiva con versiones -->
+        <section class="section section-dark" id="versions">
+            <div class="container fade-in">
+                <h2 class="section-title">Versiones de elementary OS</h2>
+                <p class="section-subtitle">Hacé clic en cada versión para ver los detalles</p>
+                <div class="version-tabs" id="versionTabs" role="tablist" aria-label="Versiones de elementary OS">
+                    <button class="version-tab active" data-version="jupiter" role="tab" aria-selected="true" aria-controls="panel-jupiter">0.1 Jupiter</button>
+                    <button class="version-tab" data-version="luna" role="tab" aria-selected="false" aria-controls="panel-luna">0.2 Luna</button>
+                    <button class="version-tab" data-version="freya" role="tab" aria-selected="false" aria-controls="panel-freya">0.3 Freya</button>
+                    <button class="version-tab" data-version="loki" role="tab" aria-selected="false" aria-controls="panel-loki">0.4 Loki</button>
+                    <button class="version-tab" data-version="juno" role="tab" aria-selected="false" aria-controls="panel-juno">5.0 Juno</button>
+                    <button class="version-tab" data-version="hera" role="tab" aria-selected="false" aria-controls="panel-hera">5.1 Hera</button>
+                    <button class="version-tab" data-version="odin" role="tab" aria-selected="false" aria-controls="panel-odin">6.0 Odin</button>
+                    <button class="version-tab" data-version="jolnir" role="tab" aria-selected="false" aria-controls="panel-jolnir">6.1 Jólnir</button>
+                    <button class="version-tab" data-version="horus" role="tab" aria-selected="false" aria-controls="panel-horus">7.0 Horus</button>
+                    <button class="version-tab" data-version="circe" role="tab" aria-selected="false" aria-controls="panel-circe">8.x Circe</button>
+                </div>
+                <div class="version-panels" id="versionPanels">
+                    <div class="version-panel active" data-version="jupiter" id="panel-jupiter" role="tabpanel" aria-labelledby="t-jupiter">
+                        <div class="version-panel-header">
+                            <h3>0.1 "Jupiter"</h3>
+                            <span class="version-date">31 de marzo de 2011</span>
+                        </div>
+                        <p>La primera versión estable de elementary OS, basada en Ubuntu 10.10. Presentó el entorno Pantheon con sus primeras aplicaciones: Midori (navegador), Exaile (música) y Scratch (editor de código). El diseño ya mostraba el enfoque minimalista que definiría al proyecto.</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 10.10</span>
+                            <span><strong>Estado:</strong> Sin soporte</span>
+                        </div>
+                    </div>
+                    <div class="version-panel" data-version="luna" id="panel-luna" role="tabpanel">
+                        <div class="version-panel-header">
+                            <h3>0.2 "Luna"</h3>
+                            <span class="version-date">10 de agosto de 2013</span>
+                        </div>
+                        <p>Rediseño completo del sistema y del sitio web. Incluyó un instalador propio, nuevas aplicaciones y una identidad visual más definida. Luna consolidó a elementary OS como una alternativa seria en el ecosistema Linux.</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 12.04 LTS</span>
+                            <span><strong>Estado:</strong> Sin soporte</span>
+                        </div>
+                    </div>
+                    <div class="version-panel" data-version="freya" id="panel-freya" role="tabpanel">
+                        <div class="version-panel-header">
+                            <h3>0.3 "Freya"</h3>
+                            <span class="version-date">11 de abril de 2015</span>
+                        </div>
+                        <p>Recibió más de 1.2 millones de descargas. Originalmente se llamaría "Isis", pero se cambió para evitar una connotación negativa. Introdujo mejoras de rendimiento y el popular modelo de pago lo que quieras.</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 14.04 LTS</span>
+                            <span><strong>Estado:</strong> Sin soporte</span>
+                        </div>
+                    </div>
+                    <div class="version-panel" data-version="loki" id="panel-loki" role="tabpanel">
+                        <div class="version-panel-header">
+                            <h3>0.4 "Loki"</h3>
+                            <span class="version-date">9 de septiembre de 2016</span>
+                        </div>
+                        <p>Uno de los lanzamientos más importantes: introdujo <strong>AppCenter</strong>, reemplazó Midori por GNOME Web, creó Mail (fork de Geary) y mejoró las notificaciones. Recibió elogios por su elegancia.</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 16.04 LTS</span>
+                            <span><strong>Estado:</strong> Sin soporte</span>
+                        </div>
+                    </div>
+                    <div class="version-panel" data-version="juno" id="panel-juno" role="tabpanel">
+                        <div class="version-panel-header">
+                            <h3>5.0 "Juno"</h3>
+                            <span class="version-date">16 de octubre de 2018</span>
+                        </div>
+                        <p>Cambió el esquema de numeración para evitar confundir versiones estables con versiones de desarrollo. Incluyó Night Light, ventanas ajustables y Housekeeping. Forbes lo calificó de "absolutamente hermoso".</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 18.04 LTS</span>
+                            <span><strong>Estado:</strong> Sin soporte</span>
+                        </div>
+                    </div>
+                    <div class="version-panel" data-version="hera" id="panel-hera" role="tabpanel">
+                        <div class="version-panel-header">
+                            <h3>5.1 "Hera"</h3>
+                            <span class="version-date">3 de diciembre de 2019</span>
+                        </div>
+                        <p>Versión de refinamiento que añadió soporte Flatpak de fábrica, mejoró el rendimiento general, pulió la interfaz y actualizó las aplicaciones del sistema.</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 18.04 LTS</span>
+                            <span><strong>Estado:</strong> Sin soporte</span>
+                        </div>
+                    </div>
+                    <div class="version-panel" data-version="odin" id="panel-odin" role="tabpanel">
+                        <div class="version-panel-header">
+                            <h3>6.0 "Odin"</h3>
+                            <span class="version-date">10 de agosto de 2021</span>
+                        </div>
+                        <p>Actualización mayor con <strong>tema oscuro</strong>, colores de acento personalizables, gestos multitáctiles, nuevo instalador, Centro de Notificaciones, cuentas en línea (IMAP/CalDAV) y actualización de firmware.</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 20.04 LTS</span>
+                            <span><strong>Estado:</strong> Sin soporte</span>
+                        </div>
+                    </div>
+                    <div class="version-panel" data-version="jolnir" id="panel-jolnir" role="tabpanel">
+                        <div class="version-panel-header">
+                            <h3>6.1 "Jólnir"</h3>
+                            <span class="version-date">20 de diciembre de 2021</span>
+                        </div>
+                        <p>Actualización menor de Odin con correcciones y mejoras de rendimiento. Durante este período se produjo el cambio de propiedad: Cassidy James Blaede vendió sus acciones a Danielle Foré.</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 20.04 LTS</span>
+                            <span><strong>Estado:</strong> Sin soporte</span>
+                        </div>
+                    </div>
+                    <div class="version-panel" data-version="horus" id="panel-horus" role="tabpanel">
+                        <div class="version-panel-header">
+                            <h3>7.0 "Horus"</h3>
+                            <span class="version-date">31 de enero de 2023</span>
+                        </div>
+                        <p>Actualización mayor basada en Ubuntu 22.04 LTS. Se enfocó en mejorar AppCenter, añadir nuevas configuraciones y pulir la plataforma de desarrollo, con mejor integración de Flatpak.</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 22.04 LTS</span>
+                            <span><strong>Estado:</strong> Con soporte</span>
+                        </div>
+                    </div>
+                    <div class="version-panel" data-version="circe" id="panel-circe" role="tabpanel">
+                        <div class="version-panel-header">
+                            <h3>8.x "Circe" (8.0 / 8.1)</h3>
+                            <span class="version-date">26 nov 2024 / 22 dic 2025</span>
+                        </div>
+                        <p>La versión más reciente. <strong>8.0</strong> introdujo multitarea mejorada, integración de Flathub y diseño inclusivo. <strong>8.1</strong> trajo Wayland como sesión predeterminada (Secure Session), soporte ARM64, escalado fraccionario, las apps Monitor y Maps, efecto blur-behind y un workspace en el Dock. Usa kernel 6.14 y Mesa 25. La última actualización, <strong>8.1.1</strong>, se publicó el 26 de febrero de 2026.</p>
+                        <div class="version-meta">
+                            <span><strong>Base:</strong> Ubuntu 24.04 LTS</span>
+                            <span><strong>Estado:</strong> Versión actual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 15. Fuentes -->
+        <section class="section" id="sources">
+            <div class="container fade-in">
+                <h2 class="section-title">Fuentes</h2>
+                <p class="section-subtitle">Información verificada a partir de fuentes oficiales y confiables</p>
+                <div class="sources-grid">
+                    <a href="https://elementary.io" target="_blank" rel="noopener noreferrer" class="source-card">
+                        <h3>Sitio oficial</h3>
+                        <p>elementary.io</p>
+                    </a>
+                    <a href="https://blog.elementary.io" target="_blank" rel="noopener noreferrer" class="source-card">
+                        <h3>Blog oficial</h3>
+                        <p>blog.elementary.io</p>
+                    </a>
+                    <a href="https://github.com/elementary" target="_blank" rel="noopener noreferrer" class="source-card">
+                        <h3>Repositorio GitHub</h3>
+                        <p>github.com/elementary</p>
+                    </a>
+                    <a href="https://elementary.io/open-source" target="_blank" rel="noopener noreferrer" class="source-card">
+                        <h3>Página de código abierto</h3>
+                        <p>elementary.io/open-source</p>
+                    </a>
+                    <a href="https://elementary.io/docs/installation" target="_blank" rel="noopener noreferrer" class="source-card">
+                        <h3>Guía de instalación</h3>
+                        <p>elementary.io/docs/installation</p>
+                    </a>
+                    <a href="https://appcenter.elementary.io" target="_blank" rel="noopener noreferrer" class="source-card">
+                        <h3>AppCenter en línea</h3>
+                        <p>appcenter.elementary.io</p>
+                    </a>
+                    <a href="https://elementary.io/privacy" target="_blank" rel="noopener noreferrer" class="source-card">
+                        <h3>Política de privacidad</h3>
+                        <p>elementary.io/privacy</p>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Elementary_OS" target="_blank" rel="noopener noreferrer" class="source-card">
+                        <h3>Wikipedia (referencia complementaria)</h3>
+                        <p>en.wikipedia.org/wiki/Elementary_OS</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Proyecto educativo sobre elementary OS. Toda la información ha sido verificada a partir de fuentes oficiales.</p>
+            <p class="footer-disclaimer">elementary OS es una marca de elementary, Inc. Este sitio no está afiliado con el proyecto oficial.</p>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
